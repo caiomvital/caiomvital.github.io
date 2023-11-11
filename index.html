@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jogo Termo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="palavras.js"></script>
+</head>
+<body>
+    <h1>Bem-vindo ao Jogo Termo!</h1>
+    <form id="game-form">
+        <label for="tentativa">Digite uma palavra:</label><br>
+        <input type="text" id="tentativa" name="tentativa" required><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <div id="grid"></div>
+    <p id="tentativas"></p>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="close-popup" class="close-popup">×</span>
+            <p id="popup-text"></p>
+            <button id="new-game">Novo Jogo</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
